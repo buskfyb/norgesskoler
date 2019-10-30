@@ -719,4 +719,13 @@ var overlayMaps = {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 L.control.layers(null, overlayMaps, {collapsed: false}).addTo(mymap);
 
+//add some more prominent city labels to the map
+var marker = L.marker([59.280776, 11.104585])
+    .bindTooltip("Test Label", 
+    {
+        permanent: true, 
+        direction: 'right'
+    }
+);
+
 //end vikenkart.js
