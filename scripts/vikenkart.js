@@ -726,6 +726,6 @@ var marker = L.marker([59.280776, 11.104585])
         permanent: true, 
         direction: 'right'
     }
-);
+).addTo(mymap);
 
 //end vikenkart.js
