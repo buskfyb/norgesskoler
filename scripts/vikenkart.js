@@ -730,12 +730,12 @@ var schoolList = [
 ];
 
 for (var i = 0; i < schoolList.length; i++) {
-circle = new L.circleMarker([schoolList[i][0], schoolList[i][1]], {color:"black", fillColor:schoolList[i][2], weight: 2, fillOpacity: 0.7, radius:schoolList[i][3]}).bindPopup(schoolList[i][4]);
+circle = new L.circleMarker([schoolList[i][0], schoolList[i][1]], {color:"black", fillColor:schoolList[i][2], weight: 2, fillOpacity: 0.7, radius:schoolList[i][3]}).bindPopup(schoolList[i][4]).addTo(mymap);
 }	
 
-var bigSchools = L.layerGroup().addTo(mymap);
-var mediumSchools = L.layerGroup().addTo(mymap);
-var smallSchools = L.layerGroup().addTo(mymap);
+var bigSchools = L.layerGroup();
+var mediumSchools = L.layerGroup();
+var smallSchools = L.layerGroup();
 
 
 for (var i = 0; i < schoolList.length; i++) {
