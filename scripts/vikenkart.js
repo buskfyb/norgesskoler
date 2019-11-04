@@ -719,9 +719,23 @@ var overlayMaps = {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 L.control.layers(null, overlayMaps, {collapsed: false}).addTo(mymap);
 
-///////////////////////////////////////////////////////////////////////////////////////////////
-//add some more prominent city labels to the map
-///////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////testing code
+
+var schoolList = [
+[60.168961, 9.007370, "yellow", 5, "<b> Numedal videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='http://www.numedal.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+
+[60.1458046, 11.1640485, "pink", 15, "<b> Jessheim videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.jessheim.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"]
+
+];
+
+//Change the size and color of circular markers here
+		for (var i = 0; i < schoolList.length; i++) {
+			circle = new L.circleMarker ([schoolList[i][0], schoolList[i][1]], {color:"black", fillColor:schoolList[i][2], weight: 2, fillOpacity: 0.7, radius:schoolList[i][3])
+				.bindPopup(schoolList[i][4])
+				.addTo(map);
+		}	
+
 /*
 var marker = L.marker([59.280776, 11.104585])
     .bindTooltip("Test Label", 
