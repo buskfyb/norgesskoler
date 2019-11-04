@@ -730,11 +730,9 @@ var schoolList = [
 ];
 
 //Change the size and color of circular markers here
-		for (var i = 0; i < schoolList.length; i++) {
-			circle = new L.circleMarker ([schoolList[i][0], schoolList[i][1]], {color:"black", fillColor:schoolList[i][2], weight: 2, fillOpacity: 0.7, radius:schoolList[i][3])
-				.bindPopup(schoolList[i][4])
-				.addTo(map);
-		}	
+for (var i = 0; i < schoolList.length; i++) {
+circle = new L.circleMarker ([schoolList[i][0], schoolList[i][1]], {color:"black", fillColor:schoolList[i][2], weight: 2, fillOpacity: 0.7, radius:schoolList[i][3]}).bindPopup(schoolList[i][4]).addTo(map);
+}	
 
 /*
 var marker = L.marker([59.280776, 11.104585])
