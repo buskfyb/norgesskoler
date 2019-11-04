@@ -719,8 +719,9 @@ var overlayMaps = {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 L.control.layers(null, overlayMaps, {collapsed: false}).addTo(mymap);
 
-
+/*
 ////////////////////////////////////////////////////////////////testing code
+///// THIS WORKS AND NEEDS TO BE UTILIZED
 
 var schoolList = [
 [59.917581, 10.187339, "yellow", 5, "<b> Numedal videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='http://www.numedal.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
@@ -760,6 +761,12 @@ var overlayMapsTT = {
 }
 
 L.control.layers(null, overlayMapsTT, {collapsed: false}).addTo(mymap);	
+*/
+
+
+/////////////////////////////////////////////////////////////////end of new code
+
+
 
 /*
 var marker = L.marker([59.280776, 11.104585])
