@@ -745,10 +745,10 @@ for (var i = 0; i < schoolList.length; i++) {
 	if (schoolList[i][3] == 5) {
 		//add to smallSchools
 		currentSchool.addTo(smallSchools);
-	} else if (schoolList[i][3] == 10){
+	} else if (schoolList[i][3] == 10) {
 		//add to mediumSchools
 		currentSchool.addTo(mediumSchools);
-	} else (schoolList[i][3] == 15){
+	} else {
 		//add to largeSchools
 		currentSchool.addTo(bigSchools);
     }
