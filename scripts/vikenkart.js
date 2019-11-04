@@ -697,7 +697,7 @@ vgsStOlav.bindPopup("<b> St. Olav videregående skole </b><br> Lorem ipsum dolor
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //define the layer groups (overlays) for groups of schools based on size; add them to map right away
 //so that the selection box (legend) will be populated right away
-// see tutorial at https://leafletjs.com/examples/layers-control/
+//see tutorial at https://leafletjs.com/examples/layers-control/
 ///////////////////////////////////////////////////////////////////////////////////////////////
 var bigSchoolsGroup = L.layerGroup([vgsBuskerud, vgsDrammen, vgsHonefoss, vgsKongsberg, vgsLier, vgsRingerike, vgsRoyken, vgsStHallvard, vgsAassiden, vgsAsker, vgsBjertnes, vgsBjorkelangen, vgsDromtorp, vgsEidsvoll, vgsFrogn, vgsJessheim, vgsLillestrom, vgsLorenskog, vgsMailand, vgsNadderud, vgsNannestad, vgsNesbru, vgsNesodden, vgsRosenvilde, vgsRud, vgsRaelingen, vgsSandvika, vgsSkedsmo, vgsSki, vgsStrommen, vgsSorumsand, vgsValler, vgsVestby, vgsAas, vgsAskim, vgsBorg, vgsFrederikII, vgsGlemmen, vgsGreaker, vgsHalden, vgsKirkeparken, vgsMalakoff, vgsMysen, vgsStOlav]).addTo(mymap);
 
@@ -743,15 +743,13 @@ circle = new L.circleMarker([schoolList[i][0], schoolList[i][1]], {
 	}).bindPopup(schoolList[i][4]);
 
 	if (schoolList[i][3] == 5) {
-		//add to smallSchools
 		circle.addTo(smallSchools);
 	} else if (schoolList[i][3] == 10) {
-		//add to mediumSchools
 		circle.addTo(mediumSchools);
 	} else {
-		//add to largeSchools
 		circle.addTo(bigSchools);
-
+	}
+	
 } //end for loop
 
 
