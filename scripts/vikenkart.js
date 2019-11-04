@@ -729,31 +729,31 @@ var schoolList = [
 
 ];
 
-for (var i = 0; i < schoolList.length; i++) {
-circle = new L.circleMarker([schoolList[i][0], schoolList[i][1]], {color:"black", fillColor:schoolList[i][2], weight: 2, fillOpacity: 0.7, radius:schoolList[i][3]}).bindPopup(schoolList[i][4]).addTo(mymap);
-}	
-
-var bigSchools = L.layerGroup();
-var mediumSchools = L.layerGroup();
-var smallSchools = L.layerGroup();
-
+var bigSchools = L.layerGroup().addTo(mymap);
+var mediumSchools = L.layerGroup().addTo(mymap);
+var smallSchools = L.layerGroup().addTo(mymap);
 
 for (var i = 0; i < schoolList.length; i++) {
-	
-	var currentSchool = schoolList[i];
-	
+circle = new L.circleMarker([schoolList[i][0], schoolList[i][1]], {
+	color:"black", 
+	fillColor:schoolList[i][2], 
+	weight: 2, 
+	fillOpacity: 0.7, 
+	radius:schoolList[i][3]
+	}).bindPopup(schoolList[i][4]);
+
 	if (schoolList[i][3] == 5) {
 		//add to smallSchools
-		currentSchool.addTo(smallSchools);
+		circle.addTo(smallSchools);
 	} else if (schoolList[i][3] == 10) {
 		//add to mediumSchools
-		currentSchool.addTo(mediumSchools);
+		circle.addTo(mediumSchools);
 	} else {
 		//add to largeSchools
-		currentSchool.addTo(bigSchools);
-    }
+		circle.addTo(bigSchools);
 
-}
+} //end for loop
+
 
 var overlayMapsTT = {
 "<span style='color:red; font-size:15px; font-weight:bold;'> Store skoler </span>": bigSchools,
