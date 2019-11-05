@@ -510,7 +510,7 @@ polygonViken.setStyle(
 //[lat, long, "color of circle", radius in meters, "text for school"]
 //used to populate the circleMarker() later in the code
 ///////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 var skolerArray = [
 //Buskerud fylkeskommune
 [59.894920, 9.931280, "red", 15, "<b> Buskerud videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='http://www.buskerud.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
@@ -632,6 +632,7 @@ var skolerArray = [
 [59.280776, 11.104585, "red", 15, "<b> St. Olav videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://stolav.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"]
 
 ]; // end of skolerArray[]
+*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //define the layer groups (overlays) for groups of schools based on size; add them to map right away
