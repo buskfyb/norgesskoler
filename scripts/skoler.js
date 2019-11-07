@@ -125,3 +125,51 @@ var skolerArray = [
 [59.280776, 11.104585, "red", 15, "<b> St. Olav videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://stolav.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"]
 
 ]; // end of skolerArray[]
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//define the layer groups (overlays) for groups of schools based on size; add them to map right away
+//so that the selection box (legend) will be populated right away
+//see tutorial at https://leafletjs.com/examples/layers-control/
+///////////////////////////////////////////////////////////////////////////////////////////////
+var bigSchoolsGroup = L.layerGroup().addTo(mymap);
+var mediumSchoolsGroup = L.layerGroup().addTo(mymap);
+var smallSchoolsGroup = L.layerGroup().addTo(mymap);
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//use a for loop to iterate through the array (of schools) and create a circleMarker() object
+//for each school using the info from the array + common info in the loop
+//add each new circleMarker object to one of the overlay groups depending upon size
+///////////////////////////////////////////////////////////////////////////////////////////////
+for (var i = 0; i < skolerArray.length; i++) {
+skoleCircle = new L.circleMarker([skolerArray[i][0], skolerArray[i][1]], {
+	color:"black", //circleMarker border color
+	fillColor:skolerArray[i][2], //color of circle from array
+	weight: 2, //thickness of the border line
+	fillOpacity: 0.7, //saturation of inner color
+	radius:skolerArray[i][3] //size of circle, from the array
+	}).bindPopup(skolerArray[i][4]); //add the text from the array for each school to a popup
+
+	//check the radius of each object and add it to the appropriate school overlay group
+	if (skolerArray[i][3] == 15) {
+		skoleCircle.addTo(bigSchoolsGroup);
+	} else if (skolerArray[i][3] == 10) {
+		skoleCircle.addTo(mediumSchoolsGroup);
+	} else {
+		skoleCircle.addTo(smallSchoolsGroup);
+	}
+	
+} //end for loop
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//create the legend of each group of schools as overlay list with checkboxes
+///////////////////////////////////////////////////////////////////////////////////////////////
+var overlayMaps = {
+"<span style='color:red; font-size:15px; font-weight:bold;'> Store skoler </span>": bigSchoolsGroup,
+"<span style='color:blue; font-size:15px; font-weight:bold;'> Medium skoler </span>": mediumSchoolsGroup,
+"<span style='color:green; font-size:15px; font-weight:bold;'> Små skoler </span>": smallSchoolsGroup
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//add the overlayMaps legend to the map, not collapsed
+///////////////////////////////////////////////////////////////////////////////////////////////
+L.control.layers(null, overlayMaps, {collapsed: false}).addTo(mymap);
