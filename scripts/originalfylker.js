@@ -1,4 +1,6 @@
 var akershusLayer = L.layerGroup().addTo(mymap);
+var buskerudLayer = L.layerGroup().addTo(mymap);
+var ostfoldLayer = L.layerGroup().addTo(mymap);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //make the Akershus polygon outline
@@ -45,7 +47,9 @@ polygonAkershus.setStyle(
 polygonAkershus.addTo(akershusLayer);
 
 var overlayFylker = {
-"<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": akershusLayer
+"<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": akershusLayer,
+"<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": buskerudLayer,
+"<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": ostfoldLayer,
 }
 
 
