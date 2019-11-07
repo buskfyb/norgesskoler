@@ -149,7 +149,7 @@ skoleCircle = new L.circleMarker([skolerArray[i][0], skolerArray[i][1]], {
 	radius:skolerArray[i][3] //size of circle, from the array
 	}).bindPopup(skolerArray[i][4]); //add the text from the array for each school to a popup
 
-	//check the radius of each object and add it to the appropriate school overlay group
+	//check the radius(m) of each object and add it to the appropriate school overlay group
 	if (skolerArray[i][3] == 15) {
 		skoleCircle.addTo(bigSchoolsGroup);
 	} else if (skolerArray[i][3] == 10) {
