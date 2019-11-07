@@ -39,3 +39,12 @@ polygonAkershus.setStyle(
 	}
 	
 ); //end setStyle() for Akershus polygon
+
+var akershusLayer = L.layerGroup().addTo(mymap);
+
+var overlayFylker = {
+"<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": akershusLayer
+}
+
+
+L.control.layers(null, overlayFylker, {collapsed: false}).addTo(mymap);
