@@ -1,3 +1,5 @@
+var akershusLayer = L.layerGroup().addTo(mymap);
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //make the Akershus polygon outline
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -27,7 +29,7 @@ var polygonAkershus = L.polygon(
 [58.881955,11.514106]
 	]
 ] //end creating Akershus polygon
-).addTo(mymap);
+);
 
 // set the color for the Akershus polygon
 polygonAkershus.setStyle(
@@ -40,7 +42,7 @@ polygonAkershus.setStyle(
 	
 ); //end setStyle() for Akershus polygon
 
-var akershusLayer = L.layerGroup().addTo(mymap);
+polygonAkershus.addTo(akershusLayer);
 
 var overlayFylker = {
 "<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": akershusLayer
