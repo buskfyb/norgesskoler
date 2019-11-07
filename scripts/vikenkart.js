@@ -505,24 +505,4 @@ polygonViken.setStyle(
 	
 ); //end setStyle() for Viken polygon
 
-
-
-/*
-var marker = L.marker([59.280776, 11.104585])
-    .bindTooltip("Test Label", 
-    {
-        permanent: true, 
-        direction: 'right'
-    }
-).addTo(mymap);
-
-new L.Marker([59.280776, 11.104585], {
-    icon: new L.DivIcon({
-        className: 'my-div-icon',
-        html: '<img class="my-div-image" src="http://png-3.vector.me/files/images/4/0/402272/aiga_air_transportation_bg_thumb"/>'+
-              '<span class="my-div-span">RAF Banff Airfield</span>'
-    })
-}).addTo(mymap);
-*/
-
 //end vikenkart.js
