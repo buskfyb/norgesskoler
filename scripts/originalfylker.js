@@ -52,8 +52,8 @@ polygonBuskerud.addTo(buskerudLayer);
 
 var overlayFylker = {
 "<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": akershusLayer,
-"<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": buskerudLayer,
-"<span style='color:red; font-size:15px; font-weight:bold;'> Akershus </span>": ostfoldLayer,
+"<span style='color:red; font-size:15px; font-weight:bold;'> Buskerud </span>": buskerudLayer,
+"<span style='color:red; font-size:15px; font-weight:bold;'> Østfold </span>": ostfoldLayer,
 }
 
 L.control.layers(null, overlayFylker, {collapsed: false}).addTo(mymap);
