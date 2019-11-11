@@ -11,7 +11,6 @@ header {
   height: 113px;
   position: relative;
   display:block;
-  border-top: 3px solid #0052CC;
 }
 
 body {
@@ -22,11 +21,13 @@ body {
   color: #172b4d;
   padding: 25px 25px 0px 25px;
   background-color: #ffffff;
+  border-top: 3px solid #0052CC;
 }
 
 #content {
   padding: 5px 25px 5px 25px; /* top right bottom left */
   background-color: #ffffff;
+  min-height: 60px;
 }
 
 a {
