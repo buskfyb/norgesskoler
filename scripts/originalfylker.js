@@ -797,9 +797,9 @@ polygonOstfold.addTo(ostfoldLayer);
 
 
 var overlayFylker = {
-"<span style='color:black; font-size:15px; font-weight:bold;'> Akershus </span>": akershusLayer,
-"<span style='color:black; font-size:15px; font-weight:bold;'> Buskerud </span>": buskerudLayer,
-"<span style='color:black; font-size:15px; font-weight:bold;'> Østfold </span>": ostfoldLayer,
+"<span style='color:#444444; font-size:15px; font-weight:bold;'> Akershus </span>": akershusLayer,
+"<span style='color:#444444; font-size:15px; font-weight:bold;'> Buskerud </span>": buskerudLayer,
+"<span style='color:#444444; font-size:15px; font-weight:bold;'> Østfold </span>": ostfoldLayer,
 }
 
 L.control.layers(null, overlayFylker, {collapsed: false}).addTo(mymap);
