@@ -1,10 +1,10 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
-//create an array containing the information for each videregående skole in Viken
-//[lat, long, "color of circle", radius in meters, "text for school"]
+//create an array containing the information for each folkebibliotek in Viken
+//[lat, long, "color of circle", radius in meters, "text for bibliotek"]
 //used to populate the circleMarker() later in the code
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-var skolerArray = [
+var folkebibliotekArray = [
 //Buskerud fylkeskommune
 [59.894920, 9.931280, "red", 15, "<b> Buskerud videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='http://www.buskerud.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
 
@@ -55,121 +55,43 @@ var skolerArray = [
 
 [60.1040393, 11.3756143, "blue", 10, "<b> Hvam videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.hvam.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
 
-[60.1458046, 11.1640485, "red", 15, "<b> Jessheim videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.jessheim.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
 
-[59.887558, 11.579492, "green", 5, "<b> Kjelle videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.kjelle.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.960524, 11.046157, "red", 15, "<b> Lillestrøm videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.lillestrom.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.932039, 10.984200, "red", 15, "<b> Lørenskog videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.lorenskog.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.929574, 10.960204, "red", 15, "<b> Mailand videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.mailand.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.915656, 10.573212, "red", 15, "<b> Nadderud videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.nadderud.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[60.220029, 11.020353, "red", 15, "<b> Nannestad videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.nannestad.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[60.125009, 11.480279, "blue", 10, "<b> Nes videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.nes.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.867010, 10.485222, "red", 15, "<b> Nesbru videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.nesbru.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.839684, 10.678009, "red", 15, "<b> Nesodden videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.nesodden.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.794399, 10.812894, "blue", 10, "<b> Roald Amundsen videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.roaldamundsen.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.909470, 10.508673, "red", 15, "<b> Rosenvilde videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.rosenvilde.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.908354, 10.501052, "red", 15, "<b> Rud videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.rud.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.926222, 11.065375, "red", 15, "<b> Rælingen videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.raelingen.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.892643, 10.517550, "red", 15, "<b> Sandvika videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.sandvika.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.965051, 11.040608, "red", 15, "<b> Skedsmo videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.skedsmo.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.717578, 10.849338, "red", 15, "<b> Ski videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.ski.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.909731, 10.615869, "blue", 10, "<b> Stabekk videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.stabekk.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.954477, 11.014693, "red", 15, "<b> Strømmen videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.strommen.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.988004, 11.239037, "red", 15, "<b> Sørumsand videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.sorumsand.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.901180, 10.526938, "red", 15, "<b> Valler videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.valler.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.607144, 10.758375, "red", 15, "<b> Vestby videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.vestby.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.663149, 10.797012, "red", 15, "<b> Ås videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.aas.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-//Østfold fylkeskommune
-[59.575233, 11.160232, "red", 15, "<b> Askim videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://askim.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.266167, 11.174278, "red", 15, "<b> Borg videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://borg.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.223630, 10.925669, "red", 15, "<b> Frederik II videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://frederikii.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.218924, 10.941861, "red", 15, "<b> Glemmen videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://glemmen.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.275830, 11.028130, "red", 15, "<b> Greåker videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://greaker.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.125508, 11.394302, "red", 15, "<b> Halden videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://halden.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.314648, 11.046861, "blue", 10, "<b> Kalnes videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://kalnes.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.435249, 10.663210, "red", 15, "<b> Kirkeparken videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://kirkeparken.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.427916, 10.669456, "red", 15, "<b> Malakoff videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://malakoff.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.556741, 11.327686, "red", 15, "<b> Mysen videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://mysen.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
-
-[59.280776, 11.104585, "red", 15, "<b> St. Olav videregående skole </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://stolav.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"]
-
-]; // end of skolerArray[]
+]; // end of folkebibliotekArray[]
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
-//define the layer groups (overlays) for groups of schools based on size; add them to map right away
+//define the layer group(overlays) for groups of libraries based on size; add them to map right away
 //so that the selection box (legend) will be populated right away
 //see tutorial at https://leafletjs.com/examples/layers-control/
 ///////////////////////////////////////////////////////////////////////////////////////////////
-var bigSchoolsGroup = L.layerGroup().addTo(mymap);
-var mediumSchoolsGroup = L.layerGroup().addTo(mymap);
-var smallSchoolsGroup = L.layerGroup().addTo(mymap);
+var folkebibliotekGroup = L.layerGroup().addTo(mymap);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //use a for loop to iterate through the array (of schools) and create a circleMarker() object
 //for each school using the info from the array + common info in the loop
 //add each new circleMarker object to one of the overlay groups depending upon size
 ///////////////////////////////////////////////////////////////////////////////////////////////
-for (var i = 0; i < skolerArray.length; i++) {
-skoleCircle = new L.circleMarker([skolerArray[i][0], skolerArray[i][1]], {
+for (var i = 0; i < folkebibliotekArray.length; i++) {
+bibliotekCircle = new L.circleMarker([folkebibliotekArray[i][0], folkebibliotekArray[i][1]], {
 	color:"black", //circleMarker border color
-	fillColor:skolerArray[i][2], //color of circle from array
+	fillColor:folkebibliotekArray[i][2], //color of circle from array
 	weight: 2, //thickness of the border line
 	fillOpacity: 0.7, //saturation of inner color
-	radius:skolerArray[i][3] //size of circle, from the array
-	}).bindPopup(skolerArray[i][4]); //add the text from the array for each school to a popup
+	radius:folkebibliotekArray[i][3] //size of circle, from the array
+	}).bindPopup(folkebibliotekArray[i][4]); //add the text from the array for each library to a popup
 
-	//check the radius(m) of each object and add it to the appropriate school overlay group
-	if (skolerArray[i][3] == 15) {
-		skoleCircle.addTo(bigSchoolsGroup);
-	} else if (skolerArray[i][3] == 10) {
-		skoleCircle.addTo(mediumSchoolsGroup);
-	} else {
-		skoleCircle.addTo(smallSchoolsGroup);
-	}
+	//add it to the folkebibliotek overlay group
+	bibliotekCircle.addTo(folkebibliotekGroup);
 	
 } //end for loop
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //create the legend of each group of schools as overlay list with checkboxes
 ///////////////////////////////////////////////////////////////////////////////////////////////
-var overlayMaps = {
-"<span style='color:#444444; font-size:15px; font-weight:bold;'> Store skoler </span>": bigSchoolsGroup,
-"<span style='color:#444444; font-size:15px; font-weight:bold;'> Medium skoler </span>": mediumSchoolsGroup,
-"<span style='color:#444444; font-size:15px; font-weight:bold;'> Små skoler </span>": smallSchoolsGroup
+var overlayMapBibliotek = {
+"<span style='color:#444444; font-size:15px; font-weight:bold;'> Viken folkebibliotek </span>": folkebibliotekGroup
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //add the overlayMaps legend to the map, not collapsed
 ///////////////////////////////////////////////////////////////////////////////////////////////
-L.control.layers(null, overlayMaps, {collapsed: false}).addTo(mymap);
+L.control.layers(null, overlayMapBibliotek, {collapsed: false}).addTo(mymap);
