@@ -38,7 +38,10 @@ bibliotekCircle = new L.circleMarker([folkebibliotekArray[i][0], folkebibliotekA
 	}).bindPopup(folkebibliotekArray[i][4]); //add the text from the array for each library to a popup
 
 	//add it to the folkebibliotek overlay group
-	bibliotekCircle.addTo(folkebibliotekGroup);
+	var bibliotekSquare = L.rectangle(bibliotekCircle.getBounds());
+	bibliotekSquare.addTo(folkebibliotekGroup);
+	//bibliotekCircle.addTo(folkebibliotekGroup);
+
 	
 } //end for loop
 
