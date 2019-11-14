@@ -289,8 +289,8 @@ var polygonAkershus = L.polygon(
 // set the color for the Akershus polygon
 polygonAkershus.setStyle(
 	{
-	//fillColor: "#7D7D88",
-	fillColor: "purple",
+	//fillColor: "#7D7D88", gray color
+	fillColor: "C3DEDB",
 	color: "black", //border
 	fillOpacity: 0.5
 	}
@@ -592,7 +592,7 @@ var polygonBuskerud = L.polygon(
 polygonBuskerud.setStyle(
 	{
 	//fillColor: "#7D7D88",
-	fillColor: "orange",
+	fillColor: "BAC4DA",
 	color: "black", //border
 	fillOpacity: 0.5
 	}
@@ -786,7 +786,7 @@ var polygonOstfold = L.polygon(
 polygonOstfold.setStyle(
 	{
 	//fillColor: "#7D7D88",
-	fillColor: "pink",
+	fillColor: "CFBADA",
 	color: "black", //border
 	fillOpacity: 0.5
 	}
