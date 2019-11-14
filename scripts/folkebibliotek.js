@@ -222,7 +222,7 @@ bibliotekCircle = new L.circleMarker([folkebibliotekArray[i][0], folkebibliotekA
 	color:"black", //circleMarker border color
 	fillColor:"yellow", //color of circle from array
 	weight: 2, //thickness of the border line
-	fillOpacity: 0.7, //saturation of inner color
+	fillOpacity: 0.5, //saturation of inner color
 	radius:folkebibliotekArray[i][3] //size of circle, from the array
 	}).bindPopup(folkebibliotekArray[i][4]); //add the text from the array for each library to a popup
 
@@ -231,7 +231,6 @@ bibliotekCircle = new L.circleMarker([folkebibliotekArray[i][0], folkebibliotekA
 	//bibliotekSquare.addTo(folkebibliotekGroup);
 	bibliotekCircle.addTo(folkebibliotekGroup);
 
-	
 } //end for loop
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
