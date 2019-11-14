@@ -291,7 +291,7 @@ polygonAkershus.setStyle(
 	{
 	//fillColor: "#7D7D88", gray color
 	//fillColor: "C3DEDB",
-	color: "C3DEDB", //border
+	color: "aqua", //border
 	fillOpacity: 0
 	}
 	
@@ -593,7 +593,7 @@ polygonBuskerud.setStyle(
 	{
 	//fillColor: "#7D7D88",
 	//fillColor: "BAC4DA",
-	color: "yellow", //border
+	color: "blue", //border
 	fillOpacity: 0
 	}
 	
@@ -787,7 +787,7 @@ polygonOstfold.setStyle(
 	{
 	//fillColor: "#7D7D88",
 	//fillColor: "CFBADA",
-	color: "yellow", //border
+	color: "red", //border
 	fillOpacity: 0
 	}
 	
