@@ -592,9 +592,9 @@ var polygonBuskerud = L.polygon(
 polygonBuskerud.setStyle(
 	{
 	//fillColor: "#7D7D88",
-	fillColor: "BAC4DA",
-	color: "black", //border
-	fillOpacity: 0.5
+	//fillColor: "BAC4DA",
+	color: "yellow", //border
+	fillOpacity: 0
 	}
 	
 ); //end setStyle() for Buskerud polygon
@@ -786,9 +786,9 @@ var polygonOstfold = L.polygon(
 polygonOstfold.setStyle(
 	{
 	//fillColor: "#7D7D88",
-	fillColor: "CFBADA",
-	color: "black", //border
-	fillOpacity: 0.5
+	//fillColor: "CFBADA",
+	color: "yellow", //border
+	fillOpacity: 0
 	}
 	
 ); //end setStyle() for Ostfold polygon
