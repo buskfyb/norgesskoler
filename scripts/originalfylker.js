@@ -290,9 +290,9 @@ var polygonAkershus = L.polygon(
 polygonAkershus.setStyle(
 	{
 	//fillColor: "#7D7D88", gray color
-	fillColor: "C3DEDB",
-	color: "black", //border
-	fillOpacity: 0.5
+	//fillColor: "C3DEDB",
+	color: "C3DEDB", //border
+	fillOpacity: 0
 	}
 	
 ); //end setStyle() for Akershus polygon
