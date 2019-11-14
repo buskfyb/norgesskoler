@@ -5,19 +5,34 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 var folkebibliotekArray = [
-
-[59.894920, 9.931280, "red", 15, "<b> Buskerud folkebibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='http://www.buskerud.vgs.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"]
-
 //Buskerud
 //Drammensbiblioteket 59.743737, 10.194074 https://www.drammensbiblioteket.no/web/arena
+[59.743737, 10.194074, "red", 15, "<b> Drammensbiblioteket </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://www.drammensbiblioteket.no/web/arena' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Flesberg 59.8370, 9.5794 https://flesbergbibliotek.no/
+[59.8370, 9.5794, "red", 15, "<b> Flesberg bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://flesbergbibliotek.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Ål 60.629733, 8.561588 https://hallingdalsbiblioteka.no/al-bibliotek/
+[60.629733, 8.561588, "red", 15, "<b> Ål bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://hallingdalsbiblioteka.no/al-bibliotek/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Flå 60.429722, 9.464640 https://hallingdalsbiblioteka.no/fla-bibliotek/
+[60.429722, 9.464640, "red", 15, "<b> Flå bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://hallingdalsbiblioteka.no/fla-bibliotek/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Gol 60.7033, 8.9432 https://hallingdalsbiblioteka.no/golbibliotek/
+[60.7033, 8.9432, "red", 15, "<b> Gol bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://hallingdalsbiblioteka.no/golbibliotek/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Hemsedal 60.8624, 8.5613 https://hallingdalsbiblioteka.no/hemsedalbibliotek/
+[60.8624, 8.5613, "red", 15, "<b> Hemsedal bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://hallingdalsbiblioteka.no/hemsedalbibliotek/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Hol 60.535918, 8.221352 https://hallingdalsbiblioteka.no/hol-folkebibliotek/
+[60.535918, 8.221352, "red", 15, "<b> Hol bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://hallingdalsbiblioteka.no/hol-folkebibliotek/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Hole 60.0803, 10.2812 http://holebibliotek.no/
+[60.0803, 10.2812, "red", 15, "<b> Hole bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='http://holebibliotek.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+	
 //Hurum 59.540998, 10.556260 http://www.hurum.kommune.no/innholdssider/naring-kultur-og-frivillig/bibliotek/
+[59.540998, 10.556260, "red", 15, "<b> Hurum bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='http://www.hurum.kommune.no/innholdssider/naring-kultur-og-frivillig/bibliotek/' target='_newtab'>Klikk her for å besøke nettstedet</a>"]
+	
 //Kongsberg 559.664950, 9.644326 https://kongsbergbibliotek.no/
 //Lier 59.7872, 10.2446 https://lierbib.no/
 //Nedre Eiker 59.7500, 10.0156 https://www.nedre-eiker.kommune.no/tjenester/kultur-idrett-friluftsliv/bibliotek/
