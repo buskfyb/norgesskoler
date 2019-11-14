@@ -291,7 +291,7 @@ polygonAkershus.setStyle(
 	{
 	//fillColor: "#7D7D88", gray color
 	//fillColor: "C3DEDB",
-	color: "C3DEDB", //border
+	color: "yellow", //border
 	fillOpacity: 0
 	}
 	
