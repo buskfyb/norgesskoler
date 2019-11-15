@@ -434,8 +434,8 @@ var polygonViken = L.polygon(
 [60.075,10.595],
 [60.075,10.575],
 [60.02,10.495],
-//[60.02,10.485],
-//60.03,10.48], // where A Oslo B intersect on the left
+[60.02,10.485], // where A Oslo B intersect on the left
+//[60.03,10.48], 
 //start Oslo from inside of A
 [60.01,10.495], // end of A line on bottom
 [60,10.515],
