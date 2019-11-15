@@ -606,7 +606,7 @@ polygonBuskerud.addTo(buskerudLayer);
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 var polygonOstfold = L.polygon(
-[ //begin creating Ostfold polygon
+[ //begin creating Østfold polygon
 [59.455,10.545],
 [59.535,10.615],
 [59.53,10.64],
@@ -779,7 +779,7 @@ var polygonOstfold = L.polygon(
 [59.41,10.545],
 [59.435,10.535],
 [59.455,10.545]
-] //end creating Ostfold polygon
+] //end creating Østfold polygon
 );
 
 // set the color for the Ostfold polygon
