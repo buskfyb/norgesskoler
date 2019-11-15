@@ -8,7 +8,7 @@ var folkebibliotekArray = [
 
 //Buskerud
 //Drammensbiblioteket 59.743737, 10.194074 https://www.drammensbiblioteket.no/web/arena
-[59.743737, 10.194074, "red", 10, "<b><font size='6'> Drammensbiblioteket </font></b><br /><br /> <a href='https://www.drammensbiblioteket.no/web/arena' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
+[59.743737, 10.194074, "red", 10, "<b><font size='4'> Drammensbiblioteket </font></b><br /><br /> <a href='https://www.drammensbiblioteket.no/web/arena' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
 	
 //Flesberg 59.8370, 9.5794 https://flesbergbibliotek.no/
 [59.8370, 9.5794, "red", 10, "<b> Flesberg bibliotek </b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br /><br /> <a href='https://flesbergbibliotek.no/' target='_newtab'>Klikk her for å besøke nettstedet</a>"],
