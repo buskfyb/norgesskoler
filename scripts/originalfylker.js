@@ -799,10 +799,6 @@ polygonOstfold.setStyle(
 
 polygonOstfold.addTo(ostfoldLayer);
 
-akershusLayer.addTo(mymap);
-buskerudLayer.addTo(mymap);
-ostfoldLayer.addTo(mymap);
-
 var overlayFylker = {
 "<span style='color:#444444; font-size:15px; font-weight:bold;'> grensen til Akershus </span>": akershusLayer,
 "<span style='color:#444444; font-size:15px; font-weight:bold;'> grensen til Buskerud </span>": buskerudLayer,
