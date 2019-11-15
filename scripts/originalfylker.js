@@ -1,6 +1,10 @@
-var akershusLayer = L.layerGroup().addTo(mymap);
-var buskerudLayer = L.layerGroup().addTo(mymap);
-var ostfoldLayer = L.layerGroup().addTo(mymap);
+//var akershusLayer = L.layerGroup().addTo(mymap);
+//var buskerudLayer = L.layerGroup().addTo(mymap);
+//var ostfoldLayer = L.layerGroup().addTo(mymap);
+
+var akershusLayer = L.layerGroup();
+var buskerudLayer = L.layerGroup();
+var ostfoldLayer = L.layerGroup();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //make the Akershus polygon outline
@@ -795,6 +799,9 @@ polygonOstfold.setStyle(
 
 polygonOstfold.addTo(ostfoldLayer);
 
+akershusLayer.addTo(mymap);
+buskerudLayer.addTo(mymap);
+ostfoldLayer.addTo(mymap);
 
 var overlayFylker = {
 "<span style='color:#444444; font-size:15px; font-weight:bold;'> grensen til Akershus </span>": akershusLayer,
