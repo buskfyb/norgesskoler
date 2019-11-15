@@ -221,7 +221,7 @@ var folkebibliotekGroup = L.layerGroup().addTo(mymap);
 for (var i = 0; i < folkebibliotekArray.length; i++) {
 bibliotekCircle = new L.circleMarker([folkebibliotekArray[i][0], folkebibliotekArray[i][1]], {
 	color:"black", //circleMarker border color
-	fillColor:"yellow", //color of circle from array
+	fillColor:"orange", //color of circle from array
 	weight: 2, //thickness of the border line
 	fillOpacity: 0.5, //saturation of inner color
 	radius:folkebibliotekArray[i][3] //size of circle, from the array
