@@ -145,7 +145,7 @@ skoleCircle = new L.circleMarker([skolerArray[i][0], skolerArray[i][1]], {
 	color:"black", //circleMarker border color
 	fillColor:skolerArray[i][2], //color of circle from array
 	weight: 2, //thickness of the border line
-	fillOpacity: 0.7, //saturation of inner color
+	fillOpacity: 0.8, //saturation of inner color
 	radius:skolerArray[i][3] //size of circle, from the array
 	}).bindPopup(skolerArray[i][4]); //add the text from the array for each school to a popup
 
