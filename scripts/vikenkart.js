@@ -493,7 +493,8 @@ polygonViken.setStyle(
 	{
 	fillColor: "#d69dbd",
 	//fillColor: "green",
-	color: "black", //border
+	//color: "black", //border
+	color: "#894465", //border
 	fillOpacity: 0.5
 	}
 	
